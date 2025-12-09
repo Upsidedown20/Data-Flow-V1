@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11' # Saya ubah ke 3.11 agar library Anda terbaca
 
       - name: Install dependencies
         run: |
