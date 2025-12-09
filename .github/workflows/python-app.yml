@@ -1,7 +1,9 @@
 name: Jalankan Python Script
 
 on:
-  workflow_dispatch: # Agar tombol manual muncul
+  workflow_dispatch:      # Tombol manual (untuk test)
+  schedule:
+    - cron: '*/30 * * * *' # OTOMATIS JALAN TIAP 30 MENIT
 
 jobs:
   build:
