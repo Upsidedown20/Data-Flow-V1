@@ -16,12 +16,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12' # INI KUNCINYA (Naik ke 3.12)
+          python-version: '3.12' # Tetap 3.12 karena ini sudah sukses
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas-ta # Versi 3.12 pasti bisa baca ini
+          pip install requests     # INI YANG SAYA TAMBAHKAN
+          pip install pandas-ta    # Ini alat yang tadi
           pip install -r requirements.txt
 
       - name: Run script
